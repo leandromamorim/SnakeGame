@@ -150,8 +150,8 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         }
     }
 
+    // PopUp with restart & exit button
     private void showPopUp() {
-        // PopUp with restart & exit button
         int choice = JOptionPane.showOptionDialog(
                 this,
                 "Game Over! Restart Game?",
@@ -169,8 +169,8 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         }
     }
 
+    // Restart the game
     private void resetGame() {
-        // Restart the game
         snakeHead = new Tile(15, 15);
         snakeBody.clear();
         placeFood();
